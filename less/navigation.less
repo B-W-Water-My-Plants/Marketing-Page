@@ -1,0 +1,40 @@
+@import "variables.less";
+@import "mixins.less";
+@import "global.less";
+
+header {
+    width: 100%;
+    .flex(column, center, center);
+
+    .logo {
+        .flex(row, space-evenly, center);
+        margin-top: 1%;
+        img {
+            width: 20%;
+            height: 20%;
+            
+        }  
+
+        h2 {
+            font-size: 3rem;
+        }
+    }
+    
+    nav{
+        .flex(column, center, center);
+        width: 100%;  
+    }
+    
+}
+
+.navlinks {
+    color: @green;
+    text-decoration: none;
+    padding: 2%;
+    font-size: 1.5 rem;
+    font-family: @roboto;
+    
+    a:hover {
+        color: @brown;
+    }
+}

@@ -1,0 +1,22 @@
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.jumbotron {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  color: #FFFFFF;
+  height: auto;
+  background-image: url("/images/close-up-photo-of-green-leafed-plant-1407305.jpg");
+  padding: 5%;
+}
+.jumbotron h1 {
+  font-size: 6rem;
+}
+.jumbotron p {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 2rem;
+}
