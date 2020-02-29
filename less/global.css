@@ -1,5 +1,9 @@
 * {
   font-size: 10px;
+  box-sizing: border-box;
+}
+p,
+a {
   font-family: Roboto, Arial, sans-serif;
 }
 h1,
