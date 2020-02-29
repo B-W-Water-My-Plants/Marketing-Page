@@ -3,9 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="less/index.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="less/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Roboto&display=swap" rel="stylesheet">
     <title>Water My Plants</title>
   </head>
   <body>
@@ -14,18 +13,23 @@
             <h2>Water My Plants</h2>
             <img src="images/Plant-emoji.svg">
         </div>
-        
+        <!-- FOR HAMBURGER MENU - COME BACK TO LATER <input type="checkbox" class="menu-btn" id="menu-btn">
+        <label class="menu-icon" for="menu-btn"><span class="nav-icon"></label> -->
         <nav>
-            <a class="navlinks" href="#home">Home</a>
-            <a class="navlinks" href="#app">App</a>
-            <a class="navlinks" href="#contact">Contact</a>
+            <a class="top-nav navlinks" href="#home">Home</a>
+            <a class="top-nav navlinks" href="#app">App</a>
+            <a class="top-nav navlinks" href="#contact">Contact</a>
         </nav>
     </header>
 
     <div class="jumbotron">
-        <img src="images/close-up-photo-of-green-leafed-plant-1407305.jpg">
+        <!-- <div class="jumbo-img">
+            <img id="banner" src="images/close-up-photo-of-green-leafed-plant-1407305.jpg">
+        </div> -->
+        
         <h1>Water My Plants</h1>
         <p>the app to keep your plant babies alive</p>
+        
     </div>
 
     <section class="about">
@@ -34,66 +38,77 @@
             <p>Add plants and set reminders.</p>
         </div>
 
-        <div class="about=img">
-            <img src="images/green-succulent-plants-on-pots.jpg">
+        <div class="about-img">
+            <img src="images/cactus-2117102_1920.jpg">
         </div>
         
     </section>
   
     <section class="product">
-        <h2 class="center">Our Product</h2>
+        <div class="header-img">
+            <h2 class="center">Our Product</h2>
+            <img src="images/green-succulent-plants-on-pots.jpg">
+        </div>
+
         <div class="product-1 card">
             <img class="product-img" src="images/young plants growing.jpg">
-            <h3>New to Gardening?</h3>
-            <p>Water My Plants makes it easy to get started.</p>
+            <div class="product-txt">
+                <h3>New to Gardening?</h3>
+                <p>Water My Plants makes it easy to get started.</p>
+            </div>
         </div>
 
         <div class="product-2 card">
             <img class="product-img" src="images/potted-green-indoor-plants-3076899.jpg">
-            <h3>Crazy Plant Parent?</h3>
-            <p>Create custom reminders to keep track of your watering schedule.</p>
+            <div class="product-txt">
+                <h3>Crazy Plant Parent?</h3>
+                <p>Create custom reminders to keep track of your watering schedule.</p>
+            </div>
         </div>
 
         <div class="product-3 card">
             <img class="product-img" src="images/dead-roses.jpg">
-            <h3>No Green Thumb?</h3>
-            <p>No problem! Get notified to water your plants.</p>
+            <div class="product-txt">
+                <h3>No Green Thumb?</h3>
+                <p>No problem! Get notified to water your plants.</p> 
+            </div>
+            
         </div>
     </section>
 
-    <section id="#contact">
-        <h2 class="center">Contact Us</h2>
-        <div class="contact-img">
-            <img src="images/cactus-2117102_1920.jpg">
+    <section class="contact">
+        <div class="header-img">
+            <h2 class="center">Contact Us</h2>
+            <img src="images/green-succulent-plants-on-pots.jpg">
         </div>
 
         <div class="contact-class">
             <h4>UI Developer</h4>
             <div class="dev">
                 <p>Cris LaFortune</p>
-                <a href="https://github.com/cdlafortune"><img class="social-links" src="images/Github-Icon.svg"></a>
-                <a href="https://www.linkedin.com/in/cris-lafortune"><img class="social-links" src="images/LinkedIn-Icon.svg"></a>
+                <a href="https://github.com/cdlafortune" target="_blank"><img class="social-links" src="images/Github-Icon.svg"></a>
+                <a href="https://www.linkedin.com/in/cris-lafortune" target="_blank"><img class="social-links" src="images/LinkedIn-Icon.svg"></a>
             </div>
             
 
             <h4>Front-End Developers</h4>
             <div class="dev">
                 <p>Jesus Rodriguez</p>
-                <a href="https://github.com/JRodDvlpr"><img class="social-links" src="images/Github-Icon.svg"></a>
-                <a href="https://www.linkedin.com/in/jesus-rodriguez-8ba043198/"><img class="social-links" src="images/LinkedIn-Icon.svg"></a>
+                <a href="https://github.com/JRodDvlpr" target="_blank"><img class="social-links" src="images/Github-Icon.svg"></a>
+                <a href="https://www.linkedin.com/in/jesus-rodriguez-8ba043198/" target="_blank"><img class="social-links" src="images/LinkedIn-Icon.svg"></a>
             </div>
             
             <div class="dev">
                 <p>Frances Hampton</p>
-                <a href="https://github.com/sundakat"><img class="social-links" src="images/Github-Icon.svg"></a>
-                <a href="https://www.linkedin.com/in/"><img class="social-links" src="images/LinkedIn-Icon.svg"></a>
+                <a href="https://github.com/sundakat" target="_blank"><img class="social-links" src="images/Github-Icon.svg"></a>
+                <a href="https://www.linkedin.com/in/" target="_blank"><img class="social-links" src="images/LinkedIn-Icon.svg"></a>
             </div>
 
             <h4>Back-End Developer</h4>
             <div class="dev">
                 <p>Danica Valdez</p>
-                <a href="https://github.com/danicavaldez"><img class="social-links" src="images/Github-Icon.svg"></a>
-                <a href="https://www.linkedin.com/in/"><img class="social-links" src="images/LinkedIn-Icon.svg"></a>
+                <a href="https://github.com/danicavaldez" target="_blank"><img class="social-links" src="images/Github-Icon.svg"></a>
+                <a href="https://www.linkedin.com/in/" target="_blank"><img class="social-links" src="images/LinkedIn-Icon.svg"></a>
             </div>
 
         </div>
@@ -106,6 +121,7 @@
             <a class="navlinks" href="#app">App</a>
             <a class="navlinks" href="#contact">Contact</a>
         </div>
+        <h4>&copy; Water My Plants 2020 </h4>
     </footer>
 
   </body>
