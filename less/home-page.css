@@ -4,12 +4,35 @@
   color: #FFFFFF;
   height: auto;
   background-color: #97C6A5;
-  padding: 5%;
 }
-.jumbotron h1 {
+@media only screen and (min-width: 800px) {
+  .jumbotron {
+    position: relative;
+  }
+}
+.jumbotron #banner {
+  display: none;
+}
+@media only screen and (min-width: 800px) {
+  .jumbotron #banner {
+    display: inline-block;
+    width: 100%;
+    opacity: 0.5;
+    height: 300px;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .jumbotron .jumbo-txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.jumbotron .jumbo-txt h1 {
   font-size: 6rem;
 }
-.jumbotron p {
+.jumbotron .jumbo-txt p {
   font-size: 2rem;
 }
 .about {

@@ -3,19 +3,45 @@
 
 .jumbotron {
     width: 100%;
-    
+    height: auto;
     text-align: center;
     color: @white;
     height: auto;
     background-color:@green;
-    padding: 5%;
-    
-    h1 {
-        font-size: 6rem;
+
+    @media @tablet {
+        position: relative;    
     }
 
-    p {
-        font-size: 2rem;
+    #banner {
+        display: none;
+
+        @media @tablet {
+            display: inline-block;
+            width: 100%;
+            opacity: 0.5;
+            height: 300px;
+        }
+        
+    }
+    
+    .jumbo-txt {
+        @media @tablet {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+
+        h1 {
+            font-size: 6rem;
+        }
+    
+        p {
+            font-size: 2rem;
+        }
+        
     }
 }
 

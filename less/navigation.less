@@ -5,6 +5,12 @@
 header {
     width: 100%;
     .flex(column, center, center);
+    padding: 1%;
+
+    @media @tablet {
+        .flex(row, space-between, center);
+        padding: 0;
+    }
 
     .logo {
         .flex(row, space-evenly, center);
@@ -17,12 +23,19 @@ header {
 
         h2 {
             font-size: 3rem;
+            color: @brown;
         }
     }
     
     nav{
         .flex(column, center, center);
         width: 100%;  
+
+        @media @tablet {
+            .flex(row, space-evenly, center);
+            flex-wrap: nowrap;
+            padding: 0;
+        }
     }
     
 }
@@ -33,9 +46,12 @@ header {
     padding: 2%;
     font-size: 1.5 rem;
     font-family: @roboto;
-    overflow: hidden;
+
+    @media @tablet {
+        padding: 0;
+    }
     
-    a:hover {
+    &:hover {
         color: @brown;
     }
 }
