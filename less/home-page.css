@@ -18,8 +18,16 @@
     display: inline-block;
     width: 100%;
     opacity: 0.5;
-    height: 300px;
+    height: 500px;
   }
+}
+@media only screen and (min-width: 1000px) {
+  .jumbotron #banner {
+    height: 800px;
+  }
+}
+.jumbotron .jumbo-txt {
+  padding: 10% 5%;
 }
 @media only screen and (min-width: 800px) {
   .jumbotron .jumbo-txt {
@@ -27,13 +35,26 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    padding: 5%;
   }
 }
 .jumbotron .jumbo-txt h1 {
   font-size: 6rem;
+  flex-wrap: nowrap;
+}
+@media only screen and (min-width: 1000px) {
+  .jumbotron .jumbo-txt h1 {
+    font-size: 10rem;
+  }
 }
 .jumbotron .jumbo-txt p {
   font-size: 2rem;
+  padding: 1%;
+}
+@media only screen and (min-width: 1000px) {
+  .jumbotron .jumbo-txt p {
+    font-size: 4rem;
+  }
 }
 .about {
   width: 100%;
@@ -54,15 +75,28 @@
   width: 50%;
 }
 .about .about-txt P {
-  padding: 2%;
+  padding: 5%;
 }
 .about .about-img {
   width: 50%;
 }
 .about .about-img img {
-  width: 300px;
-  height: 300px;
   border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 800px) {
+  .about .about-img img {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .about .about-img img {
+    width: 400px;
+    height: 400px;
+  }
 }
 .product {
   width: 100%;
@@ -76,6 +110,14 @@
   border-top: 5px solid white;
   background-color: #97C6A5;
 }
+@media only screen and (min-width: 800px) {
+  .product {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
 .product h3 {
   font-size: 2rem;
 }
@@ -84,8 +126,15 @@
 }
 .product .product-img {
   border-radius: 50%;
+  padding: 5%;
   width: 200px;
   height: 200px;
+}
+@media only screen and (min-width: 1000px) {
+  .product .product-img {
+    width: 300px;
+    height: 300px;
+  }
 }
 .product .card {
   background-color: #FFFFFF;
@@ -94,17 +143,46 @@
   width: 100%;
   line-height: 1.5;
 }
+@media only screen and (min-width: 800px) {
+  .product .card {
+    padding: 2%;
+    margin: 2%;
+    width: 30%;
+    height: 400px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .product .card {
+    height: 600px;
+  }
+}
 .product .product-1 {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
+}
+@media only screen and (min-width: 800px) {
+  .product .product-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .product .product-2 {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
+}
+@media only screen and (min-width: 800px) {
+  .product .product-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .product .product-3 {
   display: flex;
@@ -112,11 +190,20 @@
   justify-content: space-evenly;
   align-items: center;
 }
+@media only screen and (min-width: 800px) {
+  .product .product-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .product .product-txt {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 10%;
 }
 .header-img {
   width: 100%;
@@ -128,12 +215,32 @@
   width: 100%;
   height: 500px;
 }
+@media only screen and (min-width: 800px) {
+  .header-img img {
+    height: 800px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .header-img img {
+    height: 1100px;
+  }
+}
 .header-img h2 {
   font-size: 3rem;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-75%, -50%);
+}
+@media only screen and (min-width: 800px) {
+  .header-img h2 {
+    font-size: 5rem;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .header-img h2 {
+    font-size: 7rem;
+  }
 }
 .contact {
   width: 100%;
@@ -143,6 +250,7 @@
   align-items: center;
   color: #7D695F;
   background-color: #FFFFFF;
+  margin: 5% 0;
 }
 .contact .dev {
   display: flex;
