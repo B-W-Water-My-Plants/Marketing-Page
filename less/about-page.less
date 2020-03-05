@@ -1,0 +1,52 @@
+@import "variables.less";
+@import "mixins.less";
+
+.contact {
+    width: 100%;
+    .flex(column, center, center);
+    color:@brown;
+    background-color: @green;
+    // margin: 5% 0;
+    border-bottom: @border-white;
+    border-top: @border-white;
+
+    .dev {
+        h4 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1.25rem;
+        }
+
+        .social-links {
+            img {
+                width: 10%;
+                height: 10%;
+                padding: 5%;
+            }
+            
+        }
+    }
+
+    .card {
+        margin: 5%;
+        padding: 5%;
+        width: 100%;
+        line-height: 1.5;
+        background: @white;
+
+        @media @tablet {
+            padding: 2%;
+            margin: 2%;
+            width: 30%;
+            height: 300px;
+        }
+
+        @media @desktop {
+            height: 500px;
+        }
+    }
+    
+
+}

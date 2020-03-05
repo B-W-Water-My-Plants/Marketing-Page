@@ -4,15 +4,41 @@
 footer {
     .flex(column, center, center);
     width: 100%;
-    padding: 5%;
+    // padding: 5%;
+    background-color: @brown;
 
     .footer-nav {
         width: 100%;
         .flex(column, center, center);
+
+        @media @tablet {
+            .flex(row, space-between, center);
+        }
+
+        .navlinks {
+            .flex(column, center, center);
+            color: @white;
+            text-decoration: none;
+            padding: 5%;
+            width: 100%;
+            font-size: 1.5 rem;
+            font-family: @roboto;
+
+            @media @tablet {
+                padding: 2%;
+                width: 20%;
+            }
+            
+            &:hover {
+                color: @yellow;
+            }
+        }
+        
     }
 
     h4 {
         font-size: 1.5rem;
-        color: @brown;
+        color: @white;
+        padding: 2%;
     }
 }

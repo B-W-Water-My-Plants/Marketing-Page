@@ -225,7 +225,7 @@ footer {
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 5%;
+  background-color: #7D695F;
 }
 footer .footer-nav {
   width: 100%;
@@ -234,9 +234,39 @@ footer .footer-nav {
   justify-content: center;
   align-items: center;
 }
+@media only screen and (min-width: 800px) {
+  footer .footer-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+footer .footer-nav .navlinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 5%;
+  width: 100%;
+  font-size: 1.5 rem;
+  font-family: Roboto, Arial, sans-serif;
+}
+@media only screen and (min-width: 800px) {
+  footer .footer-nav .navlinks {
+    padding: 2%;
+    width: 20%;
+  }
+}
+footer .footer-nav .navlinks:hover {
+  color: #E8DEBD;
+}
 footer h4 {
   font-size: 1.5rem;
-  color: #7D695F;
+  color: #FFFFFF;
+  padding: 2%;
 }
 .jumbotron {
   width: 100%;
@@ -244,6 +274,8 @@ footer h4 {
   color: #FFFFFF;
   height: auto;
   background-color: #97C6A5;
+  border-top: 5px solid white;
+  border-bottom: 5px solid white;
 }
 @media only screen and (min-width: 800px) {
   .jumbotron {
@@ -258,12 +290,12 @@ footer h4 {
     display: inline-block;
     width: 100%;
     opacity: 0.5;
-    height: 500px;
+    height: 800px;
   }
 }
 @media only screen and (min-width: 1000px) {
   .jumbotron #banner {
-    height: 800px;
+    height: 1000px;
   }
 }
 .jumbotron .jumbo-txt {
@@ -301,21 +333,36 @@ footer h4 {
   height: auto;
   background-color: #7D695F;
   border-bottom: 5px solid white;
-  border-top: 5px solid white;
   text-align: left;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   padding: 5%;
 }
 .about .about-txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
   font-size: 1.5rem;
   color: #FFFFFF;
   width: 50%;
+  margin: 0 auto;
 }
 .about .about-txt P {
   padding: 5%;
+}
+.about .about-txt button {
+  color: #E8DEBD;
+  background-color: #7D695F;
+  padding: 1%;
+  border-radius: 5px;
+  font-size: 1.5rem;
+}
+.about .about-txt button:hover {
+  color: #7D695F;
+  background-color: #E8DEBD;
 }
 .about .about-img {
   width: 50%;
@@ -324,7 +371,6 @@ footer h4 {
   border-radius: 50%;
   width: 200px;
   height: 200px;
-  margin: 0 auto;
 }
 @media only screen and (min-width: 800px) {
   .about .about-img img {
@@ -347,7 +393,6 @@ footer h4 {
   align-items: center;
   color: #7D695F;
   border-bottom: 5px solid white;
-  border-top: 5px solid white;
   background-color: #97C6A5;
 }
 @media only screen and (min-width: 800px) {
@@ -489,25 +534,38 @@ footer h4 {
   justify-content: center;
   align-items: center;
   color: #7D695F;
-  background-color: #FFFFFF;
-  margin: 5% 0;
-}
-.contact .dev {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 5%;
+  background-color: #97C6A5;
+  border-bottom: 5px solid white;
+  border-top: 5px solid white;
 }
 .contact .dev h4 {
   font-size: 2rem;
 }
 .contact .dev p {
   font-size: 1.25rem;
-  color: #97C6A5;
 }
-.contact .dev .social-links {
-  width: 50px;
-  height: 50px;
-  padding: 0 10%;
+.contact .dev .social-links img {
+  width: 10%;
+  height: 10%;
+  padding: 5%;
+}
+.contact .card {
+  margin: 5%;
+  padding: 5%;
+  width: 100%;
+  line-height: 1.5;
+  background: #FFFFFF;
+}
+@media only screen and (min-width: 800px) {
+  .contact .card {
+    padding: 2%;
+    margin: 2%;
+    width: 30%;
+    height: 300px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .contact .card {
+    height: 500px;
+  }
 }
