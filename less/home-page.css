@@ -4,42 +4,115 @@
   color: #FFFFFF;
   height: auto;
   background-color: #97C6A5;
-  padding: 5%;
+  border-top: 5px solid white;
+  border-bottom: 5px solid white;
 }
-.jumbotron h1 {
+@media only screen and (min-width: 800px) {
+  .jumbotron {
+    position: relative;
+  }
+}
+.jumbotron #banner {
+  display: none;
+}
+@media only screen and (min-width: 800px) {
+  .jumbotron #banner {
+    display: inline-block;
+    width: 100%;
+    opacity: 0.5;
+    height: 800px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .jumbotron #banner {
+    height: 1000px;
+  }
+}
+.jumbotron .jumbo-txt {
+  padding: 10% 5%;
+}
+@media only screen and (min-width: 800px) {
+  .jumbotron .jumbo-txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5%;
+  }
+}
+.jumbotron .jumbo-txt h1 {
   font-size: 6rem;
+  flex-wrap: nowrap;
 }
-.jumbotron p {
+@media only screen and (min-width: 1000px) {
+  .jumbotron .jumbo-txt h1 {
+    font-size: 10rem;
+  }
+}
+.jumbotron .jumbo-txt p {
   font-size: 2rem;
+  padding: 1%;
+}
+@media only screen and (min-width: 1000px) {
+  .jumbotron .jumbo-txt p {
+    font-size: 4rem;
+  }
 }
 .about {
   width: 100%;
   height: auto;
   background-color: #7D695F;
   border-bottom: 5px solid white;
-  border-top: 5px solid white;
   text-align: left;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   padding: 5%;
 }
 .about .about-txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
   font-size: 1.5rem;
   color: #FFFFFF;
   width: 50%;
+  margin: 0 auto;
 }
 .about .about-txt P {
-  padding: 2%;
+  padding: 5%;
+}
+.about .about-txt button {
+  color: #E8DEBD;
+  background-color: #7D695F;
+  padding: 1%;
+  border-radius: 5px;
+  font-size: 1.5rem;
+}
+.about .about-txt button:hover {
+  color: #7D695F;
+  background-color: #E8DEBD;
 }
 .about .about-img {
   width: 50%;
 }
 .about .about-img img {
-  width: 300px;
-  height: 300px;
   border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+@media only screen and (min-width: 800px) {
+  .about .about-img img {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .about .about-img img {
+    width: 400px;
+    height: 400px;
+  }
 }
 .product {
   width: 100%;
@@ -50,8 +123,15 @@
   align-items: center;
   color: #7D695F;
   border-bottom: 5px solid white;
-  border-top: 5px solid white;
   background-color: #97C6A5;
+}
+@media only screen and (min-width: 800px) {
+  .product {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
 }
 .product h3 {
   font-size: 2rem;
@@ -61,8 +141,15 @@
 }
 .product .product-img {
   border-radius: 50%;
+  padding: 5%;
   width: 200px;
   height: 200px;
+}
+@media only screen and (min-width: 1000px) {
+  .product .product-img {
+    width: 300px;
+    height: 300px;
+  }
 }
 .product .card {
   background-color: #FFFFFF;
@@ -71,17 +158,46 @@
   width: 100%;
   line-height: 1.5;
 }
+@media only screen and (min-width: 800px) {
+  .product .card {
+    padding: 2%;
+    margin: 2%;
+    width: 30%;
+    height: 400px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .product .card {
+    height: 600px;
+  }
+}
 .product .product-1 {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
+}
+@media only screen and (min-width: 800px) {
+  .product .product-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .product .product-2 {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
+}
+@media only screen and (min-width: 800px) {
+  .product .product-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .product .product-3 {
   display: flex;
@@ -89,11 +205,20 @@
   justify-content: space-evenly;
   align-items: center;
 }
+@media only screen and (min-width: 800px) {
+  .product .product-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .product .product-txt {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 10%;
 }
 .header-img {
   width: 100%;
@@ -105,38 +230,30 @@
   width: 100%;
   height: 500px;
 }
+@media only screen and (min-width: 800px) {
+  .header-img img {
+    height: 800px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .header-img img {
+    height: 1100px;
+  }
+}
 .header-img h2 {
   font-size: 3rem;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-75%, -50%);
 }
-.contact {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #7D695F;
-  background-color: #FFFFFF;
+@media only screen and (min-width: 800px) {
+  .header-img h2 {
+    font-size: 5rem;
+  }
 }
-.contact .dev {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 5%;
-}
-.contact .dev h4 {
-  font-size: 2rem;
-}
-.contact .dev p {
-  font-size: 1.25rem;
-  color: #97C6A5;
-}
-.contact .dev .social-links {
-  width: 50px;
-  height: 50px;
-  padding: 0 10%;
+@media only screen and (min-width: 1000px) {
+  .header-img h2 {
+    font-size: 7rem;
+  }
 }

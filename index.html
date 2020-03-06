@@ -8,34 +8,51 @@
     <title>Water My Plants</title>
   </head>
   <body>
+    <a name="top"></a>
     <header>
         <div class="logo">
             <h2>Water My Plants</h2>
             <img src="images/Plant-emoji.svg">
         </div>
-        <!-- FOR HAMBURGER MENU - COME BACK TO LATER <input type="checkbox" class="menu-btn" id="menu-btn">
-        <label class="menu-icon" for="menu-btn"><span class="nav-icon"></label> -->
+<!--         
+        <div id="hamburger">
+            <input type="checkbox" class="menu-btn" id="menu-btn">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <ul>
+                <li><a class="top-nav burger-links" href="/index.html">Home</a></li>
+                <li><a class="top-nav burger-links" href="https://watermyplants-fe.netlify.com/login">Log In</a></li>
+                <li><a class="top-nav burger-links" href="https://watermyplants-fe.netlify.com/signup">Sign Up</a></li>
+                <li><a class="top-nav burger-links" href="/about.html">About</a></li>
+            </ul>
+        </div> -->
+
         <nav>
-            <a class="top-nav navlinks" href="#home">Home</a>
-            <a class="top-nav navlinks" href="#app">App</a>
-            <a class="top-nav navlinks" href="#contact">Contact</a>
+            <a class="top-nav navlinks" href="/index.html">Home</a>
+            <a class="top-nav navlinks" href="https://watermyplants-fe.netlify.com/login">Log In</a>
+            <a class="top-nav navlinks" href="https://watermyplants-fe.netlify.com/signup">Sign Up</a>
+            <a class="top-nav navlinks" href="/about.html">About</a>
         </nav>
+        
+        
     </header>
 
     <div class="jumbotron">
-        <!-- <div class="jumbo-img">
-            <img id="banner" src="images/close-up-photo-of-green-leafed-plant-1407305.jpg">
-        </div> -->
-        
-        <h1>Water My Plants</h1>
-        <p>the app to keep your plant babies alive</p>
-        
+        <img id="banner" src="images/close-up-photo-of-green-leafed-plant-1407305.jpg">
+        <div class="jumbo-txt">
+            <h1>Water My Plants</h1>
+            <p>the app to keep your plant babies alive</p>
+        </div>
     </div>
 
     <section class="about">
         <div class="about-txt">
             <p>Get reminders based on your plant's watering needs.</p>
             <p>Add plants and set reminders.</p>
+            <button onclick="window.location.href = 'https://watermyplants-fe.netlify.com/signup';">Create an Account</button>
         </div>
 
         <div class="about-img">
@@ -44,11 +61,12 @@
         
     </section>
   
+    <div class="header-img">
+        <h2 class="center">Our Product</h2>
+        <img src="images/green-succulent-plants-on-pots.jpg">
+    </div>
+
     <section class="product">
-        <div class="header-img">
-            <h2 class="center">Our Product</h2>
-            <img src="images/green-succulent-plants-on-pots.jpg">
-        </div>
 
         <div class="product-1 card">
             <img class="product-img" src="images/young plants growing.jpg">
@@ -76,11 +94,14 @@
         </div>
     </section>
 
-    <section class="contact">
-        <div class="header-img">
-            <h2 class="center">Contact Us</h2>
-            <img src="images/green-succulent-plants-on-pots.jpg">
-        </div>
+
+    <!-- <div class="header-img">
+        <h2 class="center">Contact Us</h2>
+        <img src="images/green-succulent-plants-on-pots.jpg">
+    </div> -->
+
+    <!-- <section class="contact">
+        
 
         <div class="contact-class">
             <h4>UI Developer</h4>
@@ -101,25 +122,25 @@
             <div class="dev">
                 <p>Frances Hampton</p>
                 <a href="https://github.com/sundakat" target="_blank"><img class="social-links" src="images/Github-Icon.svg"></a>
-                <a href="https://www.linkedin.com/in/" target="_blank"><img class="social-links" src="images/LinkedIn-Icon.svg"></a>
+                <a href="http://linkedin.com/in/frances-beth-hampton-5662646a" target="_blank"><img class="social-links" src="images/LinkedIn-Icon.svg"></a>
             </div>
 
             <h4>Back-End Developer</h4>
             <div class="dev">
                 <p>Danica Valdez</p>
                 <a href="https://github.com/danicavaldez" target="_blank"><img class="social-links" src="images/Github-Icon.svg"></a>
-                <a href="https://www.linkedin.com/in/" target="_blank"><img class="social-links" src="images/LinkedIn-Icon.svg"></a>
             </div>
 
         </div>
 
-    </section>
+    </section> -->
 
     <footer>
         <div class="footer-nav">
-            <a class="navlinks" href="#home">Back to Top</a>
-            <a class="navlinks" href="#app">App</a>
-            <a class="navlinks" href="#contact">Contact</a>
+            <a class="navlinks" href="#top">Back to Top</a>
+            <a class="navlinks" href="https://watermyplants-fe.netlify.com/login">Log In</a>
+            <a class="navlinks" href="https://watermyplants-fe.netlify.com/signup">Sign Up</a>
+            <a class="navlinks" href="/about.html">About</a>
         </div>
         <h4>&copy; Water My Plants 2020 </h4>
     </footer>
