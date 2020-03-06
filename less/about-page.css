@@ -9,7 +9,7 @@
   border-bottom: 5px solid white;
   border-top: 5px solid white;
 }
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 800px) {
   .contact {
     display: flex;
     flex-direction: row;
