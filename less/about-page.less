@@ -10,9 +10,17 @@
     border-bottom: @border-white;
     border-top: @border-white;
 
+    @media @desktop {
+        .flex(row, space-around, center);
+    }
+
     .dev {
         h4 {
             font-size: 2rem;
+
+            @media @desktop {
+                font-size: 1.75rem;
+            }
         }
 
         p {
@@ -20,11 +28,9 @@
         }
 
         .social-links {
-            img {
-                width: 10%;
-                height: 10%;
-                padding: 5%;
-            }
+            width: 30%;
+            height: 30%;
+            padding: 5%;
             
         }
     }

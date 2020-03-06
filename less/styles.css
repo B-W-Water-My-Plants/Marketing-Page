@@ -276,47 +276,48 @@ footer h4 {
   background-color: #97C6A5;
   border-top: 5px solid white;
   border-bottom: 5px solid white;
-}
-@media only screen and (min-width: 800px) {
-  .jumbotron {
-    position: relative;
-  }
+  position: relative;
 }
 .jumbotron #banner {
-  display: none;
+  display: inline-block;
+  width: 100%;
+  height: 60vh;
+  opacity: 0.5;
 }
 @media only screen and (min-width: 800px) {
   .jumbotron #banner {
-    display: inline-block;
-    width: 100%;
-    opacity: 0.5;
-    height: 800px;
+    height: 80vh;
   }
 }
 @media only screen and (min-width: 1000px) {
   .jumbotron #banner {
-    height: 1000px;
+    height: 100vh;
   }
 }
 .jumbotron .jumbo-txt {
   padding: 10% 5%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 @media only screen and (min-width: 800px) {
   .jumbotron .jumbo-txt {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     padding: 5%;
   }
 }
 .jumbotron .jumbo-txt h1 {
-  font-size: 6rem;
+  font-size: 4rem;
   flex-wrap: nowrap;
+}
+@media only screen and (min-width: 800px) {
+  .jumbotron .jumbo-txt h1 {
+    font-size: 6rem;
+  }
 }
 @media only screen and (min-width: 1000px) {
   .jumbotron .jumbo-txt h1 {
-    font-size: 10rem;
+    font-size: 8rem;
   }
 }
 .jumbotron .jumbo-txt p {
@@ -498,16 +499,16 @@ footer h4 {
 }
 .header-img img {
   width: 100%;
-  height: 500px;
+  height: 50vh;
 }
 @media only screen and (min-width: 800px) {
   .header-img img {
-    height: 800px;
+    height: 80vh;
   }
 }
 @media only screen and (min-width: 1000px) {
   .header-img img {
-    height: 1100px;
+    height: 100vh;
   }
 }
 .header-img h2 {
@@ -538,15 +539,28 @@ footer h4 {
   border-bottom: 5px solid white;
   border-top: 5px solid white;
 }
+@media only screen and (min-width: 1000px) {
+  .contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
 .contact .dev h4 {
   font-size: 2rem;
+}
+@media only screen and (min-width: 1000px) {
+  .contact .dev h4 {
+    font-size: 1.75rem;
+  }
 }
 .contact .dev p {
   font-size: 1.25rem;
 }
-.contact .dev .social-links img {
-  width: 10%;
-  height: 10%;
+.contact .dev .social-links {
+  width: 30%;
+  height: 30%;
   padding: 5%;
 }
 .contact .card {
