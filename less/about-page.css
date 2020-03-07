@@ -9,7 +9,7 @@
   border-bottom: 5px solid white;
   border-top: 5px solid white;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1000px) {
   .contact {
     display: flex;
     flex-direction: row;
@@ -29,9 +29,21 @@
   font-size: 1.25rem;
 }
 .contact .dev .social-links {
-  width: 30%;
-  height: 30%;
+  width: 20%;
+  height: 20%;
   padding: 5%;
+}
+@media only screen and (min-width: 800px) {
+  .contact .dev .social-links {
+    width: 15%;
+    height: 15%;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .contact .dev .social-links {
+    width: 30%;
+    height: 30%;
+  }
 }
 .contact .card {
   margin: 5%;
@@ -44,7 +56,7 @@
   .contact .card {
     padding: 2%;
     margin: 2%;
-    width: 30%;
+    width: 100%;
     height: 300px;
   }
 }
