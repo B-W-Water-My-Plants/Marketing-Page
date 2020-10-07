@@ -1,6 +1,6 @@
 # Marketing-Page
 This is a landing page for a reminder app created with HTML, CSS, and LESS
-Check out the Product Vision Page [here](https://docs.google.com/document/d/1RqQazV-OpCSIAaqeUg-l4ynZry83BTL4EczTth4Fl9c/edit?usp=sharing)
+Check out the Product Vision Page [here](https://docs.google.com/document/d/1RqQazV-OpCSIAaqeUg-l4ynZry83BTL4EczTth4Fl9c/edit?usp=sharing)  
 See the live website [here](https://watermyplantsui.netlify.com/)
 
 ## Image Credits 
